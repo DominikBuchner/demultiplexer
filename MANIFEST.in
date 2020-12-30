@@ -1,0 +1,2 @@
+include demultiplexer/data/primersets/Tutorial_primers.txt
+include demultiplexer/data/tagging_templates/Example_scheme.xlsx
