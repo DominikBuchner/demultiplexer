@@ -109,7 +109,7 @@ def main():
 
         ## opens the tagging scheme generator
         ## all tagging scheme generator code can be found here
-        if event == 'Create tagging scheme' and values['_PRIMERSET_'] != '' and 'pairs' in globals():
+        if event == 'Create tagging scheme' and values['_PRIMERSET_'] != '' and 'pairs' in locals():
             ## activate the scheme generator window
             scheme_gen_active = True
 
@@ -135,7 +135,7 @@ def main():
 
         ## check if files are selected and a primerset is selected
         if event == 'Create tagging scheme':
-            if not 'pairs' in globals():
+            if not 'pairs' in locals():
                 window['_OUTSTREAM_'].print('{}: Please load files to demultiplex.'.format(datetime.datetime.now().strftime("%H:%M:%S")))
             if values['_PRIMERSET_'] == '':
                 window['_OUTSTREAM_'].print('{}: Please select a primerset.'.format(datetime.datetime.now().strftime("%H:%M:%S")))
@@ -148,7 +148,7 @@ def main():
                 os.startfile(values['_TAGGING_SCHEME_'])
 
         if event == 'Start demultiplexing':
-            if not 'pairs' in globals():
+            if not 'pairs' in locals():
                 window['_OUTSTREAM_'].print('{}: Please load files to demultiplex.'.format(datetime.datetime.now().strftime("%H:%M:%S")))
             if values['_PRIMERSET_'] == '':
                 window['_OUTSTREAM_'].print('{}: Please select a primerset.'.format(datetime.datetime.now().strftime("%H:%M:%S")))
