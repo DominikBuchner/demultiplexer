@@ -1,4 +1,4 @@
-import datetime, pkg_resources, os
+import datetime, pkg_resources, os, subprocess, sys
 import PySimpleGUI as sg
 from demultiplexer import file_pairs
 from demultiplexer import save_primerset
@@ -146,7 +146,11 @@ def main():
             if values['_TAGGING_SCHEME_'] == '':
                 window['_OUTSTREAM_'].print('{}: Please select a tagging scheme.'.format(datetime.datetime.now().strftime("%H:%M:%S")))
             else:
-                os.startfile(values['_TAGGING_SCHEME_'])
+                if sys.platform == "win32":
+                    os.startfile(values['_TAGGING_SCHEME_'])
+                else:
+                    opener = "open" if sys.platform == 'darwin' else 'xdg-open'
+                    subprocess.call([opener, values['_TAGGING_SCHEME_']])
 
         if event == 'Start demultiplexing':
             if not 'pairs' in locals():
