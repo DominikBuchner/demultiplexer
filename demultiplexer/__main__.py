@@ -40,6 +40,7 @@ def main():
                   [sg.Frame(layout = [
                   [sg.Multiline(size = (57, 10), key = '_OUTSTREAM_', autoscroll = True)]],
                   title = 'Output')],
+                  [sg.Button('Exit')],
                   ]
 
     ## creates the window element
