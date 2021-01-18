@@ -56,12 +56,12 @@ def demultiplex(primerset, tagging_scheme_header ,tagging_scheme_line, output_fo
 
     for sample in tagging_scheme_line[4:]:
         if sample:
-            fwd_path = Path(output_folder).joinpath('{}_1.fastq.gz'.format(sample))
-            rev_path = Path(output_folder).joinpath('{}_2.fastq.gz'.format(sample))
+            fwd_path = Path(output_folder).joinpath('{}_r1.fastq.gz'.format(sample))
+            rev_path = Path(output_folder).joinpath('{}_r2.fastq.gz'.format(sample))
             out_handles[sample] = (gzip.open(fwd_path, 'wt'), gzip.open(rev_path, 'wt'))
 
-    nomatch_fwd = Path(output_folder).joinpath('no_match_{}_1.fastq.gz'.format(Path(tagging_scheme_line[2]).with_suffix('').with_suffix('')))
-    nomatch_rev = Path(output_folder).joinpath('no_match_{}_2.fastq.gz'.format(Path(tagging_scheme_line[3]).with_suffix('').with_suffix('')))
+    nomatch_fwd = Path(output_folder).joinpath('no_match_{}_r1.fastq.gz'.format(Path(tagging_scheme_line[2]).with_suffix('').with_suffix('')))
+    nomatch_rev = Path(output_folder).joinpath('no_match_{}_r2.fastq.gz'.format(Path(tagging_scheme_line[3]).with_suffix('').with_suffix('')))
     out_handles['nomatch'] = (gzip.open(nomatch_fwd, 'wt'), gzip.open(nomatch_rev, 'wt'))
 
     ## core demultiplexing code. checks all lines of the input file against all sequence combinations
