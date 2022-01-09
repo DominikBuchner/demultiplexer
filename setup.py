@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="demultiplexer",
-    version="1.0.5",
+    version="1.1.0",
     author="Dominik Buchner",
     author_email="dominik.buchner524@googlemail.com",
     description="python script to demultiplex illumina reads tagged with the leeselab tagging scheme",
