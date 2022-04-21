@@ -27,6 +27,14 @@ Taking a look at "1_r1.fastq.gz" different tags can be recognized:
 
 ![](https://github.com/DominikBuchner/demultiplexer/blob/main/tutorial_data/pics/file%20preview.PNG?raw=true)
 
+Tag 5: TCTCA, Tag 6: AGCTA, Tag 1: CTGT, Tag 9: GTCCTA.
+The reverse reads are tagged in a similar manner. All files in the tutorial dataset share those tags and can be seperated by demultiplexer.
+
+To do so, the dataset has to be loaded into demultiplexer. Files can be selected via the filebrowse button. After selection the files have to be loaded.
+Demutliplexer will automatically find all files pairs of forward and reverse reads as long as the are seperated by an equal ending (e.g. _r1 - _r2; 1 - 2; A - B).
+
+![](https://github.com/DominikBuchner/demultiplexer/blob/main/tutorial_data/pics/loaded%20files.PNG?raw=true)
+
 To run the program download the tutorial data from the repository.  
 Load the files into demultiplexer.  
 Load the primerset containing the information for the dataset.  
