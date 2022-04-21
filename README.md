@@ -1,16 +1,30 @@
 # demultiplexer
- python script to demultiplex illumina reads tagged with the leeselab tagging scheme
+Demultiplexer is a python script to demultiplex Illumina reads that are tagged in addition to the index reads.
+This could be different primers sequenced on one lane or additional inline tags combined with index reads.
+Demultiplexer takes demultiplexed (by index read) files as input and searches for patterns at the beginning
+and/or end of the reads and outputs a many files as there are provided in the sample sheet.
 
-## Installation and startup
+Demultiplexer can be run via GUI or as a commandline tool. It will run on all major operating systems
+since it's programmed in pure python.
+
+## Installation
 To install:
 
 `pip install demultiplexer`
 
-To run open the terminal and type:
+To update:
 
-`demultiplexer`
+`pip install --upgrade demultiplexer`
 
-## Tutorial
+## How to use
+We highly recommend creating the input files via the GUI since it makes things really easy.
+To run demultiplexer on a server simply move all files there and then call demultiplexer via
+the commandline interface.
+
+
+
+
+
 To run the program download the tutorial data from the repository.  
 Load the files into demultiplexer.  
 Load the primerset containing the information for the dataset.  
