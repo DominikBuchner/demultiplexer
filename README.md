@@ -2,7 +2,7 @@
 Demultiplexer is a python script to demultiplex Illumina reads that are tagged in addition to the index reads.
 This could be different primers sequenced on one lane or additional inline tags combined with index reads.
 Demultiplexer takes demultiplexed (by index read) files as input and searches for patterns at the beginning
-and/or end of the reads and outputs a many files as there are provided in the sample sheet.
+and/or end of the reads and outputs as many files as there are provided in the sample sheet.
 
 Demultiplexer can be run via GUI or as a commandline tool. It will run on all major operating systems
 since it's programmed in pure python.
@@ -21,6 +21,11 @@ We highly recommend creating the input files via the GUI since it makes things r
 To run demultiplexer on a server simply move all files there and then call demultiplexer via
 the commandline interface.
 
+To start all files to demultiplex have to be loaded by demultiplexer. In the tutorial data
+there are 20 gzipped fastq files that will be used in this tutorial.
+Taking a look at "1_r1.fastq.gz" different tags can be recognized:
+
+![](demultiplexer/tutorial_data/pics/file preview.png)
 
 
 
