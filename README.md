@@ -25,10 +25,7 @@ To start all files to demultiplex have to be loaded by demultiplexer. In the tut
 there are 20 gzipped fastq files that will be used in this tutorial.
 Taking a look at "1_r1.fastq.gz" different tags can be recognized:
 
-![](demultiplexer/tutorial_data/pics/file preview.PNG)
-
-
-
+![](tutorial_data/pics/file preview.PNG)
 
 To run the program download the tutorial data from the repository.  
 Load the files into demultiplexer.  
