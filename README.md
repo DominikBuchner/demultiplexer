@@ -58,7 +58,7 @@ When the tagging scheme is saved demultiplexer will also show the path where it'
 It can be selected via file browse and then opened via the "Modify selected scheme button". In the tagging scheme the file paths of all input files, the detected
 file names as well as all selected primer combinations are displayed. Simply enter the sample names you want demultiplexer to create (e.g. 1a - 10d) and save the tagging scheme.
 
-![]()
+![](https://github.com/DominikBuchner/demultiplexer/blob/main/tutorial_data/pics/Tagging%20scheme.PNG?raw=true)
 
 To run the program download the tutorial data from the repository.  
 Load the files into demultiplexer.  
