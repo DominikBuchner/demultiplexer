@@ -49,11 +49,11 @@ Now it's time to create a tagging scheme. All information that is needed to demu
 that contains information about all samples combined with all primer combinations. To create a tagging scheme enter the number of primer combinations
 used and click on "Create tagging scheme". A new window will pop up.
 
-![]
+![](https://github.com/DominikBuchner/demultiplexer/blob/main/tutorial_data/pics/Tagging%20scheme%20generator.PNG?raw=true)
 
 When the tagging scheme is saved demultiplexer will also show the path where it's saved. All tagging scheme will be saved in demultiplexer's data folder.
 
-![]
+![](https://github.com/DominikBuchner/demultiplexer/blob/main/tutorial_data/pics/Tagging%20scheme%20saved.PNG?raw=true)
 
 To run the program download the tutorial data from the repository.  
 Load the files into demultiplexer.  
