@@ -60,10 +60,6 @@ file names as well as all selected primer combinations are displayed. Simply ent
 
 ![](https://github.com/DominikBuchner/demultiplexer/blob/main/tutorial_data/pics/Tagging%20scheme.PNG?raw=true)
 
-To run the program download the tutorial data from the repository.  
-Load the files into demultiplexer.  
-Load the primerset containing the information for the dataset.  
-New primersets can be costumized for your needs with the create primerset button.  
-Create a new tagging scheme with the loaded files and select all combinations used in your dataset.  
-Fill in the samples in the tagging scheme.  
-Hit the demultiplex button. If needed the tags can be removed from the sequences.  
+One the tagging scheme is saved and an output folder is selected the demultiplexing can be started. The tags may be removed during demultiplexing, depending on your application.
+If inline barcodes where used they can be removed but if the demultiplexing is done primer-wise they can be kept, since primer/adapter removal is usually done within the
+subsequent data processing steps.
