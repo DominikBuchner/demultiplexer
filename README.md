@@ -66,3 +66,5 @@ subsequent data processing steps.
 
 ## GUI based processing
 Once everything is set just click the "Demultiplex" button. Demultiplexer will use all but one available cores.
+
+![](https://github.com/DominikBuchner/demultiplexer/blob/main/tutorial_data/pics/Output%20GUI.PNG?raw=true)
