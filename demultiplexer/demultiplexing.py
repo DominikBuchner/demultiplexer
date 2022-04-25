@@ -130,3 +130,19 @@ def main(primerset, tagging_scheme, output_folder, tag_removal, print_handle, wi
     window.Refresh()
     Parallel(n_jobs = cores_to_use)(delayed(demultiplex)(primerset, rows[0], rows[i], output_folder, tag_removal) for i in range(1, len(rows)))
     print_handle.print('{}: Done'.format(datetime.datetime.now().strftime("%H:%M:%S")))
+
+def main_cl(primerset, tagging_scheme, output_folder, tag_removal, cores_to_use = psutil.cpu_count(logical = False) - 1):
+        ## creates a dict where primer names are associated with the corresponding sequence
+        primerset = {line.split(',')[0]: line.split(',')[1] for line in open(primerset, 'r')}
+
+        ## load the tagging scheme
+        wb = openpyxl.load_workbook(tagging_scheme)
+        ws = wb.active
+
+        ## collect all rows from the tagging scheme
+        rows = [[cell.value for cell in row] for row in ws.iter_rows()]
+
+        ## run the demultiplex function on every line in the tagging scheme in parallel
+        print('{}: Starting to demultiplex {} file pairs.'.format(datetime.datetime.now().strftime("%H:%M:%S"), len(rows) - 1))
+        Parallel(n_jobs = cores_to_use)(delayed(demultiplex)(primerset, rows[0], rows[i], output_folder, tag_removal) for i in range(1, len(rows)))
+        print('{}: Done'.format(datetime.datetime.now().strftime("%H:%M:%S")))

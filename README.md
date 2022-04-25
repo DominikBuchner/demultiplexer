@@ -63,3 +63,6 @@ file names as well as all selected primer combinations are displayed. Simply ent
 One the tagging scheme is saved and an output folder is selected the demultiplexing can be started. The tags may be removed during demultiplexing, depending on your application.
 If inline barcodes where used they can be removed but if the demultiplexing is done primer-wise they can be kept, since primer/adapter removal is usually done within the
 subsequent data processing steps.
+
+## GUI based processing
+Once everything is set just click the "Demultiplex" button. Demultiplexer will use all but one available cores.
