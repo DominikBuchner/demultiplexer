@@ -43,7 +43,7 @@ when clicking "Create primer set".
 
 When the primerset is saved demultiplexer will show the path where it is saved. All primersets will be saved in demultiplexer's data folder.
 
-![]
+![](https://github.com/DominikBuchner/demultiplexer/blob/main/tutorial_data/pics/Primerset%20saved.PNG?raw=true)
 
 To run the program download the tutorial data from the repository.  
 Load the files into demultiplexer.  
