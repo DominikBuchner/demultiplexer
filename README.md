@@ -75,3 +75,9 @@ scheme. In this example the path files are stored on an ubuntu server and the pa
 
 ![](https://github.com/DominikBuchner/demultiplexer/blob/main/tutorial_data/pics/Server%20view.PNG?raw=true)
 ![](https://github.com/DominikBuchner/demultiplexer/blob/main/tutorial_data/pics/Server%20scheme.PNG?raw=true)
+
+To run demultiplexer via the command line open the python interpreter first:
+
+```
+python3
+```
