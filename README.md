@@ -77,10 +77,15 @@ scheme. In this example the path files are stored on an ubuntu server and the pa
 ![](https://github.com/DominikBuchner/demultiplexer/blob/main/tutorial_data/pics/Server%20scheme.PNG?raw=true)
 
 To run demultiplexer via the command line open the python interpreter first and import the main_cl function from the module
-This function has :
+This function has 5 arguments: primerset, tagging_scheme, output_folder, tag_removal and cores_to_use. Tag removal defaults to False if not specified,
+cores_to_use defaults to all available - 1 cores. The path to the primerset, tagging_scheme and an output folder have to be provided:
 
 ```
 python3
 >>>from demultiplexer.demultiplexing import main_cl
->>>
+>>>main_cl('Tutorial_primerset.txt', 'Tutorial_scheme.xlsx', '/mnt/xio/db/dem')
 ```
+
+Which will do the job:
+
+![]()
