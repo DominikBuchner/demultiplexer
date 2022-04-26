@@ -68,3 +68,7 @@ subsequent data processing steps.
 Once everything is set just click the "Demultiplex" button. Demultiplexer will use all but one available cores.
 
 ![](https://github.com/DominikBuchner/demultiplexer/blob/main/tutorial_data/pics/Output%20GUI.PNG?raw=true)
+
+## Commandline usage via Python API
+If you set up all files needed for demultiplexer via the GUI you can move them anywhere. Remember to change the filepaths of the files to demultiplex in the tagging
+scheme. In this example the path files are stored on an ubuntu server and the paths were changed accordingly.
