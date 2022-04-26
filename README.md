@@ -74,3 +74,4 @@ If you set up all files needed for demultiplexer via the GUI you can move them a
 scheme. In this example the path files are stored on an ubuntu server and the paths were changed accordingly.
 
 ![](https://github.com/DominikBuchner/demultiplexer/blob/main/tutorial_data/pics/Server%20view.PNG?raw=true)
+![](https://github.com/DominikBuchner/demultiplexer/blob/main/tutorial_data/pics/Server%20scheme.PNG?raw=true)
