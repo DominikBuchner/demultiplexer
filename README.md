@@ -86,6 +86,6 @@ python3
 >>>main_cl('Tutorial_primerset.txt', 'Tutorial_scheme.xlsx', '/mnt/xio/db/dem')
 ```
 
-Which will do the job:
+Which will get the job done:
 
-![]()
+![](https://github.com/DominikBuchner/demultiplexer/blob/main/tutorial_data/pics/Server%20output.PNG?raw=true)
