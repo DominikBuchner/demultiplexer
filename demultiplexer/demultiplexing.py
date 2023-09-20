@@ -140,10 +140,6 @@ def demultiplex(
         out_handles[sample][0].close()
         out_handles[sample][1].close()
 
-    ## remove nomatch files after finishing
-    for file in nomatch_fwd + nomatch_rev:
-        os.remove(file)
-
     ## show user output
     print(
         "{}: {} - {}: {} reads demultiplexed.".format(
@@ -153,6 +149,10 @@ def demultiplex(
             count,
         )
     )
+
+    ## remove nomatch files after finishing
+    os.remove(nomatch_fwd)
+    os.remove(nomatch_rev)
 
 
 ## main function to handle the control of the demutliplexing process
